@@ -7,7 +7,7 @@
 Если у вас еще нет локальной копии проекта, клонируйте репозиторий:
 
 ```bash
-git clone <URL-ВАШЕГО-РЕПОЗИТОРИЯ>
+git clone https://github.com/islamniyazovk/aniwiki.git
 cd aniwiki
 ```
 
