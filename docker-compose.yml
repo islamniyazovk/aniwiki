@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: ani-backend
+    ports:
+      # ЗДЕСЬ УКАЖИТЕ ВАШ ПОРТ
+      - "8000:8000"
+    restart: always
+    volumes: 
+      - .:/app 
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: ani-frontend
+    ports:
+      # ЗДЕСЬ УКАЖИТЕ ВАШ ПОРТ
+      - "80:80"
+    restart: always
+    volumes: 
+      - .:/frontend
